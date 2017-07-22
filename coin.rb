@@ -3,7 +3,11 @@ def coin(change)
 	if change == 1
 		{quarter: 0, dime:0, nickel: 0, penny: 1}
 	
-	 else change == 5
+	 elsif change == 5
         {quater: 0, dime: 0, nickel: 1, penny: 0}
+    
+    elsif change == 10
+    	{quarter: 0, dime: 1, nickel: 0, penny: 0}
     end
+
 end
