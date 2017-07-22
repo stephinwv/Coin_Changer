@@ -16,4 +16,7 @@ class TestCoinChanger < Minitest::Test
     def test_for_dime
     	assert_equal({quarter: 0, dime: 1, nickel: 0, penny: 0}, coin(10))
     end
+    def test_for_quarter
+    	assert_equal({quarter: 1, dime: 0, nickel: 0, penny: 0}, coin(25))
+    end
 end
